@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  background-color: purple;
+  height: 100vh;
+}
+
+.App .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+.App .header h1 {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+}
+
+.App .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 90%;
+}
+
+.App .main .menu {
+  width: 80px;
+  height: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding-top: 40px;
+}
+
+.App .main .menu a li {
+  padding: 20px 10px;
+  font-size: 20px;
+  color: white;
+  border-right: 5px solid greenyellow;
+}
+
+.App .main .dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #D6D6D6;
+  border-radius: 30px 10px 10px 30px;
+  overflow-y: scroll;
+}
+
+.App .main .dashboard .painelAnalitico {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  height: 250px;
+  padding: 20px 40px;
+  min-height: 250px;
+}
+
+.App .main .dashboard .painelAnalitico h1 {
+  font-size: 23px;
+}
+
+.App .main .dashboard .painelAnalitico form {
+  width: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.App .main .dashboard .painelAnalitico form input,
+.App .main .dashboard .painelAnalitico form button {
+  padding: 2px;
+  font-size: 12px;
+  width: 200px;
+  outline: none;
+}
+
+.App .main .dashboard .painelAnalitico form button {
+  width: 100px;
+  border: none;
+  color: white;
+  background-color: purple;
+}
+
+.App .main .dashboard .painelAnalitico .boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+.App .main .dashboard .painelAnalitico .boxes div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 290px;
+  height: 120px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 6px 1px gray;
+          box-shadow: 1px 1px 6px 1px gray;
+  border-bottom: 3px solid green;
+}
+
+.App .main .dashboard .painelAnalitico .boxes div h2 {
+  font-size: 15px;
+}
+
+.App .main .dashboard .painelAnalitico .dividas div {
+  border-bottom: 3px solid red;
+}
+
+.App .main .dashboard .graficos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 100%;
+  height: auto;
+  padding: 20px 40px;
+}
+
+.App .main .dashboard .graficos h1 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.App .main .dashboard .graficos .toggle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 230px;
+  height: auto;
+}
+
+.App .main .dashboard .graficos .toggle .chart1 {
+  background-color: white;
+  color: purple;
+}
+
+.App .main .dashboard .graficos .toggle button {
+  cursor: pointer;
+  background-color: purple;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+.App .main .dashboard .graficos .transferChart {
+  display: none;
+}
+
+.App .main .dashboard .graficos .transferChart,
+.App .main .dashboard .graficos .depositChart {
+  background-color: white;
+  padding: 10px;
+}
+/*# sourceMappingURL=style.css.map */
